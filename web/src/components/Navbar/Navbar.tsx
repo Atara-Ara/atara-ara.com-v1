@@ -1,12 +1,12 @@
-import React from 'react';
 import './Navbar.sass';
-
 import Logo from './assets/Logo.tsx';
+import Menu from './assets/Menu.tsx';
 
 export const Navbar = () => {
     return (
-        <div>
-            <Logo color="white" />
-        </div>
+        <nav>
+            <div className='logo'><Logo color="white" /></div>
+            <div className='menu'><Menu color="white" /></div>
+        </nav>
     )
 };
