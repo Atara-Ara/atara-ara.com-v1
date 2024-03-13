@@ -4,9 +4,13 @@ import Menu from './assets/Menu.tsx';
 
 export const Navbar = () => {
     return (
-        <nav>
-            <div className='logo'><Logo color="white" /></div>
-            <div className='menu'><Menu color="white" /></div>
-        </nav>
+        <div>
+            <nav>
+                <span className='logo'><Logo color="white" /></span>
+                <span className='menu'><Menu color="white" /></span>
+            </nav>
+            <div className='darken'></div>
+        </div>
+
     )
 };
