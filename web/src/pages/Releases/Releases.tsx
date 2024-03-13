@@ -1,9 +1,10 @@
-import './Listen.sass';
+import './Releases.sass';
 import backgroundImage from './assets/background.jpeg';
 import oceanSkiesImage from './assets/occean-skies.jpeg';
 import everythingsOkayImage from './assets/everythings-okay.jpeg';
+import title from './assets/title.svg';
 
-export const Listen = () => {
+export const Releases = () => {
     const background = {
         color: 'black',
         image: `url(${backgroundImage})`
@@ -23,16 +24,16 @@ export const Listen = () => {
     ];
 
     return (
-        <section id='listen' className='listen' style={{ backgroundColor: background.color, backgroundImage: background.image }}>
-            <h1>LISTEN</h1>
-            <div className='releases'>
+        <section id='releases' className='releases' style={{ backgroundColor: background.color, backgroundImage: background.image }}>
+            <img className='title' src={title} alt='Releases' />
+            <div className='container'>
                 <div className='release'>
                     <img src={releases[0].image} alt={releases[0].title} />
-                    {/* <a href={releases[0].link} className='button'>stream / purchase</a> */}
+                    <a href={releases[0].link} className='button'>stream / purchase</a>
                 </div>
                 <div className='release'>
                     <img src={releases[1].image} alt={releases[1].title} />
-                    {/* <a href={releases[1].link} className='button'>stream / purchase</a> */}
+                    <a href={releases[1].link} className='button'>stream / purchase</a>
                 </div>
             </div>
         </section>

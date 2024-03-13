@@ -26,10 +26,7 @@ export const Home = () => {
                 <img className='header' src={content.header} alt={content.imageAlt} />
                 <img className='image' src={content.image} alt={content.imageAlt} />
 
-
-                <div className='cta'>
-                    <a href={content.link} className=' button'>stream / purchase</a>
-                </div>
+                <a className='cta' href={content.link}>stream / purchase</a>
             </div>
         </section >
     )

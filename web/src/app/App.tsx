@@ -1,7 +1,7 @@
 import { Navbar } from '../components/Navbar';
 import { Overlay } from '../components/Overlay';
 import { Home } from '../pages/Home';
-import { Listen } from '../pages/Listen';
+import { Releases } from '../pages/Releases';
 import { Shows } from '../pages/Shows';
 
 export const App = () => {
@@ -10,7 +10,7 @@ export const App = () => {
       <Navbar />
       <Overlay />
       <Home />
-      <Listen />
+      <Releases />
       <Shows />
     </div>
   )
