@@ -28,10 +28,12 @@ export const Releases = () => {
             <img className='title' src={title} alt='Releases' />
             <div className='container'>
                 <div className='release'>
+                    <h1>{releases[0].title}</h1>
                     <img src={releases[0].image} alt={releases[0].title} />
                     <a href={releases[0].link} className='button'>stream / purchase</a>
                 </div>
                 <div className='release'>
+                    <h1>{releases[1].title}</h1>
                     <img src={releases[1].image} alt={releases[1].title} />
                     <a href={releases[1].link} className='button'>stream / purchase</a>
                 </div>
