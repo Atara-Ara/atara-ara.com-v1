@@ -1,0 +1,16 @@
+{
+    "releases": [
+        {
+            "id": "3p0X57Ng",
+            "title": "Ocean Skies",
+            "release_date": "2024-03-08",
+            "cover_art": "../images/releases/3p0X57Ng.jpeg"
+        },
+        {
+            "id": "D99A6yRr",
+            "title": "Everything's Okay",
+            "release_date": "2023-07-21",
+            "cover_art": "../images/releases/D99A6yRr.jpeg"
+        }
+    ]
+}
