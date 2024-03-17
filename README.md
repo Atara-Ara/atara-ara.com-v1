@@ -23,7 +23,7 @@
 6. [Contact Information](#contact-information)
 
 ## Description
-The official website for Atara Ara is crafted with React.js for the front-end and styled using SASS. This website adopts a mobile-first design philosophy and responsive web design principles to ensure seamless display across all devices.
+The official website for Atara Ara is crafted with React.js for the front-end and styled using SASS. This website adopts a mobile-first design philosophy and responsive web design principles to ensure seamless display across all devices. Instead of separate pages for each section, the website uses a single-page design with smooth scrolling to each section. Some images including cover art for song releases are loaded lazily to improve performance.
 
 <div align="center">
     <img width="auto" height="500px" src='https://github.com/cwchilvers/atara-ara-website/assets/59628271/bd02d6cd-25e5-4c8b-9af8-98b55a9941b3'>
@@ -45,6 +45,7 @@ The official website for Atara Ara is crafted with React.js for the front-end an
 ## Credits
 * [Joyride](https://www.typejuice.com/product/joyride)
 * [Cybertone Sun Textures Vol.01](https://thevisualpharmacy.gumroad.com/l/ozsdf)
+* [react-lazy-load-image-component](https://www.npmjs.com/package/react-lazy-load-image-component)
 
 ## Contact Information
 <p align="center">

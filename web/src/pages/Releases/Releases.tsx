@@ -1,4 +1,6 @@
 import './Releases.sass';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import backgroundImage from './assets/background.jpeg';
 import oceanSkiesImage from './assets/occean-skies.jpeg';
 import everythingsOkayImage from './assets/everythings-okay.jpeg';
@@ -29,12 +31,20 @@ export const Releases = () => {
             <div className='container'>
                 <div className='release'>
                     <h1>{releases[0].title}</h1>
-                    <img src={releases[0].image} alt={releases[0].title} />
+                    <LazyLoadImage
+                        src={releases[0].image}
+                        alt={releases[0].title}
+                        threshold={500}
+                    />
                     <a href={releases[0].link} className='button'>stream / purchase</a>
                 </div>
                 <div className='release'>
                     <h1>{releases[1].title}</h1>
-                    <img src={releases[1].image} alt={releases[1].title} />
+                    <LazyLoadImage
+                        src={releases[1].image}
+                        alt={releases[1].title}
+                        threshold={500}
+                    />
                     <a href={releases[1].link} className='button'>stream / purchase</a>
                 </div>
             </div>

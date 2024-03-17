@@ -1,4 +1,5 @@
 import './Follow.sass';
+import title from './assets/title.svg';
 import Instagram from './assets/instagram.svg';
 import Bandcamp from './assets/bandcamp.svg';
 import Spotify from './assets/spotify.svg';
@@ -11,6 +12,10 @@ import AmazonMusic from './assets/amazon-music.svg';
 export const Follow = () => {
     return (
         <section id='follow' className='follow'>
+            <div className="header">
+                <img className='title' src={title} alt="Follow" />
+                <div className='line' ></div>
+            </div>
             <div className='socials'>
                 <a
                     href='https://open.spotify.com/artist/14OyPLu62THKH6fGLtjowq?si=F8Ka9GxPRheSR2fRNXQkKQ'
@@ -69,6 +74,9 @@ export const Follow = () => {
                     <img src={AmazonMusic} alt='Amazon Music' />
                 </a>
             </div>
+            <footer>
+                <p>© 2024 Atara Ara</p>
+            </footer>
         </section >
     );
 };
