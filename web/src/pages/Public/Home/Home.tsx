@@ -1,5 +1,5 @@
 import './Home.sass';
-import { config } from '../../app/config.js';
+import { config } from '../../../app/config.js';
 import { useEffect, useState } from 'react';
 
 export const Home = () => {

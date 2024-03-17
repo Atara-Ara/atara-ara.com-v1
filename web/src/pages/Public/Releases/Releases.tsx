@@ -1,7 +1,7 @@
 import './Releases.sass';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useEffect, useState } from 'react';
-import { config } from '../../app/config.js';
+import { config } from '../../../app/config';
 import title from './assets/title.svg';
 
 export const Releases = () => {
