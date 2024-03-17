@@ -1,28 +1,25 @@
 import './Releases.sass';
-import 'react-lazy-load-image-component/src/effects/blur.css';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import backgroundImage from './assets/background.jpeg';
-import title from './assets/title.svg';
 import { useEffect, useState } from 'react';
 import { config } from '../../app/config.js';
+import title from './assets/title.svg';
 
 export const Releases = () => {
-    const background = {
-        color: 'black',
-        image: `url(${backgroundImage})`
-    };
-
+    const [background, setBackground] = useState({ color: '', image: '' });
     const [releases, setReleases] = useState([]);
 
     useEffect(() => {
         fetch(`${config.backendUrl}/releases`)
             .then(response => response.json())
-            .then(data => setReleases(data.releases))
-            .catch(error => console.error('Error fetching releases:', error));
+            .then(data => {
+                setBackground({ ...background, image: `${config.backendUrl}${data.background[0].image}` });
+                setReleases(data.releases);
+            })
+            .catch(error => console.error('Error fetching releases content:', error));
     }, []);
 
     return (
-        <section id='releases' className='releases' style={{ backgroundColor: background.color, backgroundImage: background.image }}>
+        <section id='releases' className='releases' style={{ backgroundColor: background.color, backgroundImage: `url(${background.image})` }}>
             <img className='title' src={title} alt='Releases' />
             <div className='container'>
                 {releases.map((release, index) => (
@@ -37,6 +34,6 @@ export const Releases = () => {
                     </div>
                 ))}
             </div>
-        </section>
+        </section >
     );
 };

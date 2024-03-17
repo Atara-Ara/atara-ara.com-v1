@@ -1,0 +1,18 @@
+{
+    "background": [
+        {
+            "color": "black",
+            "image": "/images/home/background.jpeg"
+        }
+    ],
+    "content": [
+        {
+            "backgroundColor": "black",
+            "header": "/images/home/header.svg",
+            "headerAlt": "New Single, Everything's Okay. Out Now!",
+            "image": "/images/home/content.jpeg",
+            "imageAlt": "Artwork for the single, Everything's Okay.",
+            "link": "https://ampl.ink/v06yY"
+        }
+    ]
+}
