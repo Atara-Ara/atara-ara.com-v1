@@ -8,6 +8,7 @@ import Soundcloud from './assets/soundcloud.svg';
 import Youtube from './assets/youtube.svg';
 import TikTok from './assets/tiktok.svg';
 import AmazonMusic from './assets/amazon-music.svg';
+import ChandlerChilvers from './assets/chandler-chilvers.svg';
 
 export const Follow = () => {
     return (
@@ -76,6 +77,10 @@ export const Follow = () => {
             </div>
             <footer>
                 <p>© 2024 Atara Ara</p>
+                <div className='credit'>
+                    <img src={ChandlerChilvers} alt="Chandler Chilvers" />
+                    <p>Designed and developed by <a href='https://github.com/cwchilvers'>Chandler Chilvers</a></p>
+                </div>
             </footer>
         </section >
     );
