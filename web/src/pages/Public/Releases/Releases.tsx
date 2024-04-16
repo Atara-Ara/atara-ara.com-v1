@@ -1,18 +1,19 @@
 import './Releases.sass';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useEffect, useState } from 'react';
-import { config } from '../../../app/config';
 import title from './assets/title.svg';
+
+import config from '../../../../../config';
 
 export const Releases = () => {
     const [background, setBackground] = useState({ color: '', image: '' });
     const [releases, setReleases] = useState([]);
 
     useEffect(() => {
-        fetch(`${config.backendUrl}/releases`)
+        fetch(`${config.BACKEND_URL}/releases`)
             .then(response => response.json())
             .then(data => {
-                setBackground({ ...background, image: `${config.backendUrl}${data.background[0].image}` });
+                setBackground({ ...background, image: `${config.BACKEND_URL}${data.background[0].image}` });
                 setReleases(data.releases);
             })
             .catch(error => console.error('Error fetching releases content:', error));
@@ -26,7 +27,7 @@ export const Releases = () => {
                     <div className='release' key={index}>
                         <h1>{release.title}</h1>
                         <LazyLoadImage
-                            src={config.backendUrl + '/images/releases/' + release.id + '.jpeg'}
+                            src={config.BACKEND_URL + '/images/releases/' + release.id + '.jpeg'}
                             alt={release.title}
                             threshold={500}
                         />

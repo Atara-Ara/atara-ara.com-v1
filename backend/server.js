@@ -1,15 +1,14 @@
-require('dotenv').config();
+const config = require('../config');
 const express = require('express');
-const cors = require('cors');
 const path = require('path');
 const router = require('./routes/index');
+const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 4000;
 
 app.use(cors(
     {
-        origin: process.env.FRONTEND_URL,
+        origin: config.FRONTEND_URL,
         credentials: true,
     }
 ));
@@ -18,6 +17,6 @@ app.use('/', router);
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+app.listen(config.BACKEND_PORT, () => {
+    console.log(`Backend for ${config.FRONTEND_URL} is running on http://localhost:${config.BACKEND_PORT}. Make API calls to ${config.BACKEND_URL}`);
 });

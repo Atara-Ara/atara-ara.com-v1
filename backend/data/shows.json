@@ -1,0 +1,28 @@
+{
+    "shows": [
+        {
+            "id": "p0Xn5G3g",
+            "date": "2024-08-21",
+            "time": "8:00 PM",
+            "venue": "House of Blues Anaheim",
+            "address": "400 W Disney Way #337, Anaheim, CA 92802",
+            "link": ""
+        },
+        {
+            "id": "nIj4G3g",
+            "date": "2024-08-22",
+            "time": "8:00 PM",
+            "venue": "House of Blues San Diego",
+            "address": "1055 5th Ave, San Diego, CA 92101",
+            "link": ""
+        },
+        {
+            "id": "1Hj4G3g",
+            "date": "2024-08-23",
+            "time": "8:00 PM",
+            "venue": "House of Blues Las Vegas",
+            "address": "3950 S Las Vegas Blvd, Las Vegas, NV 89119",
+            "link": ""
+        }
+    ]
+}

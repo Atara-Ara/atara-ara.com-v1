@@ -1,6 +1,8 @@
 import './Home.sass';
-import { config } from '../../../app/config.js';
 import { useEffect, useState } from 'react';
+
+import config from '../../../../../config';
+
 
 export const Home = () => {
     const [background, setBackground] = useState({ color: '', image: '' });
@@ -14,16 +16,16 @@ export const Home = () => {
     });
 
     useEffect(() => {
-        fetch(`${config.backendUrl}/home`)
+        fetch(`${config.BACKEND_URL}/home`)
             .then(response => response.json())
             .then(data => {
-                setBackground({ ...background, image: `${config.backendUrl}${data.background[0].image}` });
+                setBackground({ ...background, image: `${config.BACKEND_URL}${data.background[0].image}` });
                 setContent({
                     ...content,
                     backgroundColor: data.content[0].backgroundColor,
-                    header: `${config.backendUrl}${data.content[0].header}`,
+                    header: `${config.BACKEND_URL}${data.content[0].header}`,
                     headerAlt: data.content[0].headerAlt,
-                    image: `${config.backendUrl}${data.content[0].image}`,
+                    image: `${config.BACKEND_URL}${data.content[0].image}`,
                     imageAlt: data.content[0].imageAlt,
                     link: data.content[0].link,
                 });
