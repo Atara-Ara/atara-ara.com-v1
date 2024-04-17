@@ -38,7 +38,7 @@ export const Shows = () => {
                         </div>
                         <div className='right'>
                             <p>{show.time}</p>
-                            {/* You can add a link here if needed */}
+                            {/* Add a link here */}
                         </div>
                     </div>
                 ))}

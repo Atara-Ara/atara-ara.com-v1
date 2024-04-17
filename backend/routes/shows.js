@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 const path = require('path');
-const showsDataPath = path.join(__dirname, '../data/releases.json');
+const showsDataPath = path.join(__dirname, '../data/shows.json');
 
 router.get('/', (req, res) => {
     fs.readFile(showsDataPath, 'utf8', (err, data) => {
