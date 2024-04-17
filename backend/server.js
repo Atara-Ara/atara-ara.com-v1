@@ -4,7 +4,6 @@ const path = require('path');
 const router = require('./routes/index');
 const cors = require('cors');
 const fs = require('fs');
-const path = require('path');
 const https = require('https');
 
 const app = express();
