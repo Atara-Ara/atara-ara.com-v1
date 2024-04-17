@@ -20,8 +20,11 @@ app.use('/', router);
 
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-const privateKey = fs.readFileSync('./ssl/private.key', 'utf8');
-const certificate = fs.readFileSync('./ssl/private/certificate.crt', 'utf8');
+const privateKeyPath = path.join(__dirname, 'ssl', 'private.key');
+const certificatePath = path.join(__dirname, 'ssl', 'certificate.crt');
+
+const privateKey = fs.readFileSync(privateKeyPath, 'utf8');
+const certificate = fs.readFileSync(certificatePath, 'utf8');
 const credentials = { key: privateKey, cert: certificate };
 
 const httpsServer = https.createServer(credentials, app);
