@@ -1,28 +1,17 @@
 import './Menu.sass';
 
-import { useEffect } from 'react';
+interface MenuProps {
+    toggleMenu: () => void;
+}
 
-export const Menu = ({ toggleMenu, isMenuVisible }) => {
-    const scrollToSection = (sectionId) => {
+export const Menu: React.FC<MenuProps> = ({ toggleMenu }) => {
+    const scrollToSection = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
             toggleMenu();
         }
     };
-
-
-
-    useEffect(() => {
-        if (isMenuVisible) {
-            console.log('(Menu.tsx) Menu is visible');
-        } else {
-            console.log('(Menu.tsx) Menu is hidden');
-        }
-    }, [isMenuVisible]);
-
-
-
 
     return (
         <div className='menu'>

@@ -12,7 +12,6 @@ export const Header = () => {
         document.body.style.overflow = isMenuVisible ? 'auto' : 'hidden';
     };
 
-
     return (
         <header>
             <div>
