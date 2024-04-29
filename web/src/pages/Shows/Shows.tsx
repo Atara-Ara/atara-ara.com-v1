@@ -4,8 +4,16 @@ import backgroundImage from './assets/background.jpeg';
 import title from './assets/title.svg';
 import data from './data/shows.json';
 
+interface Show {
+    id: string;
+    date: string;
+    venue: string;
+    address: string;
+    time: string;
+}
+
 export const Shows = () => {
-    const [shows, setShows] = useState([]);
+    const [shows, setShows] = useState<Show[]>([]);
 
     useEffect(() => {
         setShows(data.shows);

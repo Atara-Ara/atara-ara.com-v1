@@ -1,7 +1,6 @@
 import release1Image from '../assets/5Gp0Xn3g.jpeg';
-import release2Image from '../assets/c0X57N3g.jpeg';
-import release3Image from '../assets/D99A6yRr.jpeg';
-import release4Image from '../assets/3p0X57Ng.jpeg';
+import release2Image from '../assets/D99A6yRr.jpeg';
+import release3Image from '../assets/3p0X57Ng.jpeg';
 
 const data = [
     {
@@ -15,14 +14,14 @@ const data = [
         id: "D99A6yRr",
         title: "Everything's Okay",
         release_date: "2024-03-08",
-        image: release3Image,
+        image: release2Image,
         link: "https://ampl.ink/v06yY"
     },
     {
         id: "3p0X57Ng",
         title: "Ocean Skies",
         release_date: "2023-07-21",
-        image: release4Image,
+        image: release3Image,
         link: ""
     }
 ];
