@@ -1,16 +1,19 @@
-import config from '../../../config';
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Public } from '../pages/Public';
-import { Admin } from '../pages/Admin';
+import { Navbar } from '../components/Navbar';
+import { Overlay } from '../components/Overlay';
+import { Home } from '../pages/Home';
+import { Releases } from '../pages/Releases';
+import { Shows } from '../pages/Shows';
+import { Follow } from '../pages/Follow';
 
 export const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Public />} />
-        <Route path={config.ADMIN_ROUTE} element={<Admin />} />
-      </Routes>
-    </Router>
+    <div>
+      <Navbar />
+      <Overlay />
+      <Home />
+      <Releases />
+      <Shows />
+      <Follow />
+    </div>
   )
 }
