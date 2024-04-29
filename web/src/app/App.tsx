@@ -1,5 +1,4 @@
-import { Navbar } from '../components/Navbar';
-import { Overlay } from '../components/Overlay';
+import { Header } from '../components/Header';
 import { Home } from '../pages/Home';
 import { Releases } from '../pages/Releases';
 import { Shows } from '../pages/Shows';
@@ -8,8 +7,7 @@ import { Follow } from '../pages/Follow';
 export const App = () => {
   return (
     <div>
-      <Navbar />
-      <Overlay />
+      <Header />
       <Home />
       <Releases />
       <Shows />

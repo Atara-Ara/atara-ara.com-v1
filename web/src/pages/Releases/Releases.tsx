@@ -2,17 +2,19 @@ import './Releases.sass';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useEffect, useState } from 'react';
 import title from './assets/title.svg';
+import backgroundImage from './assets/background.jpeg';
 import data from './data/releases';
 
+
 export const Releases = () => {
-    const [background, setBackground] = useState({ color: '', image: '' });
+    const [background, setBackground] = useState({ color: '' });
 
     useEffect(() => {
-        setBackground({ color: '', image: '' });
+        setBackground({ color: '' });
     }, []);
 
     return (
-        <section id='releases' className='releases' style={{ backgroundColor: background.color, backgroundImage: `url(${background.image})` }}>
+        <section id='releases' className='releases' style={{ backgroundColor: background.color, backgroundImage: `url(${backgroundImage})` }}>
             <img className='title' src={title} alt='Releases' />
             <div className='container'>
                 {data.map((release, index) => (

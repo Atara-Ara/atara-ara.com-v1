@@ -1,0 +1,1 @@
+export { TopVignette } from './TopVignette';

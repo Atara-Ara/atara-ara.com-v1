@@ -6,7 +6,7 @@ import headerImage from './assets/header.svg';
 import contentImage from './assets/content.jpeg';
 
 export const Home = () => {
-    const [background, setBackground] = useState({ color: '', image: '' });
+    const [background, setBackground] = useState({ color: '' });
     const [content, setContent] = useState({
         backgroundColor: 'black',
         header: '',
