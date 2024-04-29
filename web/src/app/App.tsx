@@ -1,3 +1,4 @@
+import { Cursor } from '../components/Cursor';
 import { Header } from '../components/Header';
 import { Home } from '../pages/Home';
 import { Releases } from '../pages/Releases';
@@ -7,6 +8,7 @@ import { Follow } from '../pages/Follow';
 export const App = () => {
   return (
     <div>
+      <Cursor />
       <Header />
       <Home />
       <Releases />
