@@ -1,5 +1,5 @@
 import './Shows.sass';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import backgroundImage from './assets/background.jpeg';
 import title from './assets/title.svg';
 import data from './data/shows.json';
@@ -13,11 +13,7 @@ interface Show {
 }
 
 export const Shows = () => {
-    const [shows, setShows] = useState<Show[]>([]);
-
-    useEffect(() => {
-        setShows(data.shows);
-    }, []);
+    const [shows] = useState<Show[]>(data.shows);
 
     return (
         <section id='shows' className='shows' style={{ backgroundImage: `url(${backgroundImage})` }}>

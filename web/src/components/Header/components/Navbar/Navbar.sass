@@ -1,21 +1,41 @@
 nav
-    align-items: center
-    display: flex
-    flex-direction: row
     height: 60px
-    justify-content: space-between
     padding: 15px
     position: fixed
     width: 100%
     z-index: 100
     background-color: black
+    display: flex
+    justify-content: center
 
-    .logo, .menu-button
+    div
+        width: 100%
+        max-width: 1200px
         height: 100%
+        align-items: center
+        display: flex
+        flex-direction: row
 
-        svg
+        justify-content: space-between
+
+        .logo, .menu-button
             height: 100%
-            width: auto
 
-    .menu-button
-        cursor: pointer
+            svg
+                height: 100%
+                width: auto
+
+        .menu-button
+            cursor: pointer
+
+        ul
+            width: 100%
+            max-width: 600px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            font-size: 20px
+            padding-left: 80px
+
+            li
+                cursor: pointer
