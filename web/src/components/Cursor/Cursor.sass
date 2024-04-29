@@ -9,7 +9,11 @@
     mix-blend-mode: difference
     transform: translate(-50%, -50%)
     transition: width 0.14s ease-in-out, height 0.1s ease-in-out
+    pointer-events: none
 
-.cursor.mouse-down
-    width: 60px
-    height: 60px
+    &.mouse-down
+        width: 60px
+        height: 60px
+
+    &.hide-on-mobile
+        display: none
