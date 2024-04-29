@@ -6,7 +6,7 @@ export const Cursor = () => {
     const [isMouseDown, setIsMouseDown] = useState(false);
 
     useEffect(() => {
-        const updateCursorPosition = (e) => {
+        const updateCursorPosition = (e: MouseEvent) => {
             setCursorPosition({ x: e.clientX, y: e.clientY });
         };
 
