@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar/Navbar';
 import { TopVignette } from './components/TopVignette/TopVignette';
-import { Menu } from './components/Menu/Menu';
-import { Overlay } from './components/Overlay/Overlay';
+import { Menu } from '../Menu/Menu';
+import { Overlay } from '../Overlay/Overlay';
 
 export const Header = () => {
     const [isMenuVisible, setMenuVisibility] = useState(false);
