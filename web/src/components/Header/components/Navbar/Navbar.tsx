@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ toggleMenu, isMenuVisible }) => 
         <nav>
             <div>
                 <span className='logo'><Logo color="white" /></span>
-                {windowWidth <= 768 ? (
+                {windowWidth <= 860 ? (
                     <span className='menu-button' onClick={toggleMenu}>
                         {isMenuVisible ? <CloseIcon color="white" /> : <MenuIcon color="white" />}
                     </span>

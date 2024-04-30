@@ -1,6 +1,6 @@
-import release1Image from '../assets/5Gp0Xn3g.jpeg';
-import release2Image from '../assets/D99A6yRr.jpeg';
-import release3Image from '../assets/3p0X57Ng.jpeg';
+import release1Image from '../assets/3am.png';
+import release2Image from '../assets/EverythingsOkay.png';
+import release3Image from '../assets/OceanSkies.png';
 
 const data = [
     {

@@ -15,13 +15,13 @@ export const Releases = () => {
             <div className='container'>
                 {data.map((release, index) => (
                     <div className='release' key={index}>
-                        <h1>{release.title}</h1>
-                        <LazyLoadImage
-                            src={release.image}
-                            alt={release.title}
-                            threshold={500}
-                        />
-                        <a href={release.link} className='button'>stream / purchase</a>
+                        <a href={release.link} target='_blank' rel='noopener noreferrer'>
+                            <LazyLoadImage
+                                src={release.image}
+                                alt={release.title}
+                                threshold={500}
+                            />
+                        </a>
                     </div>
                 ))}
             </div>
