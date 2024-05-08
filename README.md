@@ -37,15 +37,18 @@ The official website for Atara Ara is crafted with React.js for the front-end an
 * TypeScript
 * Vite
 * SASS
+* Sanity.io
 * Adobe Illustrator
 * Adobe Photoshop
 * Stable Diffusion
 
 ## Credits
+* [Sanity.io](https://www.sanity.io/)
+* [react-lazy-load-image-component](https://www.npmjs.com/package/react-lazy-load-image-component)
 * [Joyride](https://www.typejuice.com/product/joyride)
 * [Cybertone Sun Textures Vol.01](https://thevisualpharmacy.gumroad.com/l/ozsdf)
-* [react-lazy-load-image-component](https://www.npmjs.com/package/react-lazy-load-image-component)
 * [concurrently](https://www.npmjs.com/package/concurrently)
+
 
 ## Contact Information
 <p align="center">
