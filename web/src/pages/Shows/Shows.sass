@@ -15,50 +15,93 @@
         width: 80vw
         max-width: 500px
 
+    h4
+        padding-top: 15px
+
     .container
         display: flex
         flex-direction: column
         padding-top: 40px
+        gap: 20px
 
         .show
-            height: 65px
-
             display: flex
             flex-direction: row
-            align-items: center
+            gap: 20px
 
-            .left
-
+            .left-container
+                height: 70px
                 display: flex
+                width: 360px
                 flex-direction: row
                 align-items: center
-                border: 3px solid black
+                border: 5px solid black
+                border-radius: 10px
+                background-color: orange
+                filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.589))
 
-                .date-left
-                    width: 65px
-                    height: 65px
+                .left
+
                     display: flex
-                    flex-direction: column
-                    justify-content: center
+                    flex-direction: row
                     align-items: center
-                    padding: 10px
-                    font-size: 18px
 
-                    .month
-                        font-family: 'Joyride Regular'
+                    .date-left
+                        width: 65px
+                        height: 65px
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                        padding: 10px
+                        font-size: 18px
 
-                    .year
-                        font-family: 'Avenir Regular'
+                        .month
+                            font-family: 'Joyride Regular'
 
-                .date-right
-                    width: 65px
-                    height: 65px
-                    background-color: black
-                    color: orange
-                    display: flex
-                    align-items: center
-                    justify-content: center
+                        .year
+                            font-family: 'Avenir Regular'
 
-                    p
-                        font-family: 'Joyride Regular'
-                        font-size: 25px
+                    .date-right
+                        width: 50px
+                        height: 60px
+                        background-color: black
+                        color: orange
+                        display: flex
+                        align-items: center
+                        justify-content: center
+
+                        p
+                            font-family: 'Joyride Regular'
+                            font-size: 20px
+
+                .info
+                    padding: 0 10px
+
+                    .row-1
+                        display: flex
+                        flex-direction: row
+
+                        align-items: center
+
+                    .location-icon
+                        height: 20px
+                        width: 20px
+                        margin-left: 10px
+
+            .tickets
+                background-color: black
+                color: orange
+                width: 120px
+                height: 70px
+                text-align: center
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 10px
+                filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.589))
+
+                p
+                    font-family: 'Joyride Regular'
+                    font-size: 20px
+                    letter-spacing: 1px
