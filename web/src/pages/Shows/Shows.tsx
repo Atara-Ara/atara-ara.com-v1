@@ -20,48 +20,42 @@ export const Shows = () => {
     return (
         <section id='shows' className='shows' style={{ backgroundImage: `url(${backgroundImage})` }}>
             <img className='title' src={title} alt='Shows' />
-            <h4>Select event for more details.</h4>
+
             <div className='container'>
                 {shows.length > 0 ? (
                     shows.map(show => (
-                        <a href={show.tickets} target='_blank' rel='noreferrer'>
-                            <div className='show' key={show.id}>
-                                <div className='left-container'>
-                                    <div className='left'>
-                                        <div className='date-left'>
-                                            <p className='month'>{new Date(show.date).toLocaleString('default', { month: 'short' })}</p>
-                                            <p className='year'>{new Date(show.date).getFullYear()}</p>
-                                        </div>
-                                        <div className='date-right'>
-                                            <p>{new Date(show.date).getDate()}</p>
-                                        </div>
-                                    </div>
-                                    <div className='info'>
-                                        <div className='row-1'>
-                                            <h1 className='venue'>{show.venue}</h1>
-                                            <a href={show.gmaps} target='_blank' rel='noreferrer'>
-                                                <img className='location-icon' src={LocationIcon} alt='Google Maps' />
-                                            </a>
-                                        </div>
-                                        <p className='city'>{show.city}</p>
-                                    </div>
+                        <div className='show' key={show.id}>
+                            <div className='left'>
+                                <p className='date'>
+                                    <span className='month'>{new Date(show.date).toLocaleString('default', { month: 'short' })} </span>
+                                    <span>{new Date(show.date).getDate()}, </span>
+                                    <span className='year'>{new Date(show.date).getFullYear()}</span>
+                                </p>
+                                <div className='venue'>
+                                    <a href={show.gmaps} target='_blank' rel='noreferrer'>
+                                        <img className='location-icon' src={LocationIcon} alt='Location via Google Maps' />
+                                    </a>
+                                    {show.venue}
                                 </div>
+                            </div>
 
-                                {/* 
+                            <div className='center'>
+                                <p className='city'>{show.city}</p>
+                            </div>
+
+                            <div className='right'>
                                 <a href={show.tickets} target='_blank' rel='noreferrer' className='tickets'>
                                     <p>Tickets</p>
-                                </a> 
-                            */}
+                                </a>
                             </div>
-                        </a>
+                        </div>
                     ))
-
                 ) : (
                     <div>
                         <p>No upcoming shows at the moment</p>
                     </div>
                 )}
             </div>
-        </section >
+        </section>
     );
 };

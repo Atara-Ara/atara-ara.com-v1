@@ -15,93 +15,97 @@
         width: 80vw
         max-width: 500px
 
-    h4
-        padding-top: 15px
-
     .container
         display: flex
         flex-direction: column
-        padding-top: 40px
-        gap: 20px
+        padding-top: 60px
+        gap: 40px
+        width: 90vw
+        max-width: 600px
 
         .show
             display: flex
             flex-direction: row
-            gap: 20px
+            align-items: center
+            justify-content: space-between
 
-            .left-container
-                height: 70px
-                display: flex
-                width: 360px
-                flex-direction: row
-                align-items: center
-                border: 5px solid black
-                border-radius: 10px
-                background-color: orange
-                filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.589))
+            .left
+                width: 40%
 
-                .left
+                .date
+                    font-size: 18px
+                    font-weight: bold
+                    color: black
 
+                .venue
                     display: flex
-                    flex-direction: row
                     align-items: center
 
-                    .date-left
-                        width: 65px
-                        height: 65px
+                    img
+                        width: 18px
+                        height: 18px
+                        margin-right: 10px
+
+            .center
+                width: 40%
+
+                .city
+                    font-weight: bold
+                    font-size: 20px
+
+            .right
+                width: 20%
+                display: flex
+                align-items: center
+                justify-content: center
+
+                .tickets
+                    background-color: black
+                    color: orange
+                    padding: 10px 20px
+                    border-radius: 5px
+
+                    p
+                        font-family: 'Joyride Regular'
+
+    @media screen and (max-width: 600px)
+        .container
+            width: 100%
+
+            gap: 60px
+
+            .show
+                flex-direction: column
+                gap: 10px
+
+                .left
+                    width: 100%
+                    text-align: center
+
+                    .date
+                        font-size: 16px
+
+                    .venue
                         display: flex
-                        flex-direction: column
-                        justify-content: center
                         align-items: center
-                        padding: 10px
+                        justify-content: center
+
+                        img
+                            width: 14px
+                            height: 14px
+
+                .center
+                    width: 100%
+                    text-align: center
+
+                    .city
                         font-size: 18px
 
-                        .month
-                            font-family: 'Joyride Regular'
+                .right
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    justify-content: center
 
-                        .year
-                            font-family: 'Avenir Regular'
-
-                    .date-right
-                        width: 50px
-                        height: 60px
-                        background-color: black
-                        color: orange
-                        display: flex
-                        align-items: center
-                        justify-content: center
-
-                        p
-                            font-family: 'Joyride Regular'
-                            font-size: 20px
-
-                .info
-                    padding: 0 10px
-
-                    .row-1
-                        display: flex
-                        flex-direction: row
-
-                        align-items: center
-
-                    .location-icon
-                        height: 20px
-                        width: 20px
-                        margin-left: 10px
-
-            .tickets
-                background-color: black
-                color: orange
-                width: 120px
-                height: 70px
-                text-align: center
-                display: flex
-                justify-content: center
-                align-items: center
-                border-radius: 10px
-                filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.589))
-
-                p
-                    font-family: 'Joyride Regular'
-                    font-size: 20px
-                    letter-spacing: 1px
+                    .tickets
+                        padding: 5px 10px
