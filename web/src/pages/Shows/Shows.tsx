@@ -4,6 +4,7 @@ import backgroundImage from './assets/background.jpeg';
 import title from './assets/title.svg';
 import data from './data/shows.json';
 import LocationIcon from './assets/location.svg';
+import { parseISO, format } from 'date-fns';
 
 interface Show {
     id: string;
@@ -27,9 +28,9 @@ export const Shows = () => {
                         <div className='show' key={show.id}>
                             <div className='left'>
                                 <p className='date'>
-                                    <span className='month'>{new Date(show.date).toLocaleString('default', { month: 'short' })} </span>
-                                    <span>{new Date(show.date).getDate()}, </span>
-                                    <span className='year'>{new Date(show.date).getFullYear()}</span>
+                                    <span className='month'>{format(parseISO(show.date), 'MMM')} </span>
+                                    <span>{format(parseISO(show.date), 'd')}, </span>
+                                    <span className='year'>{format(parseISO(show.date), 'yyyy')}</span>
                                 </p>
                                 <div className='venue'>
                                     <a href={show.gmaps} target='_blank' rel='noreferrer'>

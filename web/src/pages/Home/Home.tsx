@@ -27,12 +27,23 @@ export const Home = () => {
     );
     */}
 
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <section id='home' className='home' style={{ backgroundColor: background.color, backgroundImage: `url(${backgroundImage})` }}>
             <div className='featured-content'>
-                <div className='background' style={{ backgroundColor: 'black' }}></div>
-                <img className='image' src={contentImage} alt='content' />
+                <div className='background' style={{ backgroundColor: 'black' }}>
+                    <button className='cta' onClick={() => scrollToSection('shows')}>
+                        Tickets Here!
+                    </button>
+                    <img className='image' src={contentImage} alt='content' />
+                </div>
             </div>
-        </section>
+        </section >
     );
 };

@@ -2,7 +2,7 @@
     "shows": [
         {
             "id": "1",
-            "date": "2023-07-17",
+            "date": "2024-07-17",
             "venue": "The Mint",
             "city": "Los Angeles, CA",
             "gmaps": "https://maps.app.goo.gl/bDnsdLJXBD7wJ8Lt8",
@@ -10,7 +10,7 @@
         },
         {
             "id": "2",
-            "date": "2023-08-08",
+            "date": "2024-08-08",
             "venue": "Whisky a Go Go",
             "city": "West Hollywood, CA",
             "gmaps": "https://maps.app.goo.gl/mrr2R8kXVBriizsF8",
@@ -18,7 +18,7 @@
         },
         {
             "id": "3",
-            "date": "2023-08-31",
+            "date": "2024-08-31",
             "venue": "Bao Nguoi Viet",
             "city": "Westminster, CA",
             "gmaps": "https://maps.app.goo.gl/nmHHXupYt2Y3EAs28",
