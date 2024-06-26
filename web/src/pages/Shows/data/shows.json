@@ -3,6 +3,7 @@
         {
             "id": "1",
             "date": "2024-07-17",
+            "time": "9:25 PM",
             "venue": "The Mint",
             "city": "Los Angeles, CA",
             "gmaps": "https://maps.app.goo.gl/bDnsdLJXBD7wJ8Lt8",
@@ -11,6 +12,7 @@
         {
             "id": "2",
             "date": "2024-08-08",
+            "time": "9:30 PM",
             "venue": "Whisky a Go Go",
             "city": "West Hollywood, CA",
             "gmaps": "https://maps.app.goo.gl/mrr2R8kXVBriizsF8",
@@ -19,6 +21,7 @@
         {
             "id": "3",
             "date": "2024-08-31",
+            "time": "7:00 PM",
             "venue": "Bao Nguoi Viet",
             "city": "Westminster, CA",
             "gmaps": "https://maps.app.goo.gl/nmHHXupYt2Y3EAs28",

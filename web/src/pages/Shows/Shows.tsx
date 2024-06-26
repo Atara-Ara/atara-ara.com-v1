@@ -13,6 +13,7 @@ interface Show {
     city: string;
     tickets: string;
     gmaps: string;
+    time: string;
 }
 
 export const Shows = () => {
@@ -31,6 +32,7 @@ export const Shows = () => {
                                     <span className='month'>{format(parseISO(show.date), 'MMM')} </span>
                                     <span>{format(parseISO(show.date), 'd')}, </span>
                                     <span className='year'>{format(parseISO(show.date), 'yyyy')}</span>
+                                    <span className='time'> @ {show.time}</span>
                                 </p>
                                 <div className='venue'>
                                     <a href={show.gmaps} target='_blank' rel='noreferrer'>
