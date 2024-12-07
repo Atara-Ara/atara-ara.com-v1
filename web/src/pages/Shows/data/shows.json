@@ -2,30 +2,12 @@
     "shows": [
         {
             "id": "1",
-            "date": "2024-07-17",
-            "time": "9:25 PM",
-            "venue": "The Mint",
-            "city": "Los Angeles, CA",
-            "gmaps": "https://maps.app.goo.gl/bDnsdLJXBD7wJ8Lt8",
-            "tickets": "https://link.dice.fm/x680e294ed79"
-        },
-        {
-            "id": "2",
-            "date": "2024-08-08",
-            "time": "9:30 PM",
-            "venue": "Whisky a Go Go",
-            "city": "West Hollywood, CA",
-            "gmaps": "https://maps.app.goo.gl/mrr2R8kXVBriizsF8",
-            "tickets": "https://www.tixtree.com/e/atara-ara-live-whisky-a-go-go-de846c19449f"
-        },
-        {
-            "id": "3",
-            "date": "2024-08-31",
-            "time": "7:00 PM",
-            "venue": "Bao Nguoi Viet",
+            "date": "2024-12-08",
+            "time": "4:30 PM",
+            "venue": "Anime Night Mart at Westminster Mall",
             "city": "Westminster, CA",
-            "gmaps": "https://maps.app.goo.gl/nmHHXupYt2Y3EAs28",
-            "tickets": "https://www.tixtree.com/e/atara-ara-launch-show-8cc8c9089050"
+            "gmaps": "https://maps.app.goo.gl/dcQU2dYhGAFaDdPw5",
+            "tickets": "https://www.eventbrite.com/e/anime-night-mart-2-year-anniversary-2-day-event-westminster-mall-ca-dec7-8-tickets-1057663272319?aff=oddtdtcreator"
         }
     ]
 }

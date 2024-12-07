@@ -34,16 +34,24 @@ export const Home = () => {
         }
     };
 
-    return (
-        <section id='home' className='home' style={{ backgroundColor: background.color, backgroundImage: `url(${backgroundImage})` }}>
-            <div className='featured-content'>
-                <div className='background' style={{ backgroundColor: 'black' }}>
-                    <button className='cta' onClick={() => scrollToSection('shows')}>
-                        Tickets Here!
-                    </button>
-                    <img className='image' src={contentImage} alt='content' />
-                </div>
+return (
+    <section id='home' className='home' style={{ backgroundColor: background.color, backgroundImage: `url(${backgroundImage})` }}>
+        <div className='featured-content'>
+            <div className='background' style={{ backgroundColor: 'black' }}>
+		<h2>New Single</h2>
+		<h1>TALK TO ME</h1>
+                <img className='image' src={contentImage} alt='content' />
+                <a 
+                    className='cta' 
+                    href='https://open.spotify.com/album/5E11TAbzsFoKVcvWMf1gPW?si=6YTFQ0cfRSmz-jRR_YvC6Q' 
+                    target='_blank' 
+                    rel='noopener noreferrer'
+                >
+                    Out Now!
+                </a>
             </div>
-        </section >
-    );
+        </div>
+    </section>
+);
+
 };
